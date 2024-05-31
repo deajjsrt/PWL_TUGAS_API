@@ -30,9 +30,9 @@
                             },
                             "example": {
                                 "name": "Yonathan",
-                                "email": "yonathan0@gmail.com",
-                                "password": "dea123",
-                                "password_confirmation": "dea123"
+                                "email": "yaya@gmail.com",
+                                "password": "dey123",
+                                "password_confirmation": "dey123"
                             }
                         }
                     }
@@ -73,8 +73,8 @@
                                 "$ref": "#/components/schemas/User"
                             },
                             "example": {
-                                "email": "yonathan0@gmail.com",
-                                "password": "dea123"
+                                "email": "yaya@gmail.com",
+                                "password": "dey123"
                             }
                         }
                     }
