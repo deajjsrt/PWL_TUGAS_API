@@ -37,8 +37,8 @@ class AuthController extends Controller
      *          required=true,
      *          description="Request body description",
      *          @OA\JsonContent(
-     *              ref="components/schemas/User",
-     *              example={"name": "Augusta Ada Byron", "email": "ada.lovelace@gmail.com", "password": "Ba88a93$", "password_confirmation": "Ba88a93$123"}
+     *              ref="#/components/schemas/User",
+     *              example={"name": "Yonathan", "email": "yonathan0@gmail.com", "password": "dea123", "password_confirmation": "dea123"}
      *           ),
      *      )
      * )
@@ -87,8 +87,8 @@ class AuthController extends Controller
      *          required=true,
      *          description="Request body description",
      *          @OA\JsonContent(
-     *              ref="components/schemas/User",
-     *              example={"email": "ada.lovelace@gmail.com", "password": "Ba88a93$"}
+     *              ref="#/components/schemas/User",
+     *              example={"email": "yonathan0@gmail.com", "password": "dea123"}
      *          ),
      *      )
      * )

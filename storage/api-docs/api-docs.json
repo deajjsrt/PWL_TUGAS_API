@@ -26,13 +26,13 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "components/schemas/User"
+                                "$ref": "#/components/schemas/User"
                             },
                             "example": {
-                                "name": "Augusta Ada Byron",
-                                "email": "ada.lovelace@gmail.com",
-                                "password": "Ba88a93$",
-                                "password_confirmation": "Ba88a93$123"
+                                "name": "Yonathan",
+                                "email": "yonathan0@gmail.com",
+                                "password": "dea123",
+                                "password_confirmation": "dea123"
                             }
                         }
                     }
@@ -70,11 +70,11 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "components/schemas/User"
+                                "$ref": "#/components/schemas/User"
                             },
                             "example": {
-                                "email": "ada.lovelace@gmail.com",
-                                "password": "Ba88a93$"
+                                "email": "yonathan0@gmail.com",
+                                "password": "dea123"
                             }
                         }
                     }
@@ -394,6 +394,13 @@
                 ],
                 "xml": {
                     "name": "Book"
+                }
+            },
+            "User": {
+                "title": "User model",
+                "description": "User model",
+                "xml": {
+                    "name": "User"
                 }
             }
         },
