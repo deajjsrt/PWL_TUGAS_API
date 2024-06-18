@@ -1,16 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\BookController;
+use App\Http\Controllers\API\BagController;
 
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('/book', function () {
+Route::get('/bag', function () {
     return view('pages.plp');
 })->name('plp');
 
-Route::get('/book/{i}', function () {
+Route::get('/bag/{i}', function () {
     return view('pages.pdp');
 })->name('pdp');

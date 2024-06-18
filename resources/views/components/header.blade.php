@@ -7,7 +7,7 @@
                 <div class="col-lg-12 d-none d-md-block">
                     <div class="top-logo-area">
                         <div class="logo text-md-center">
-                            <a href="{{route('home')}}"><img src="{{asset('assets/images/logo/logo.png')}}" alt="logo" style="width:40%"></a>
+                            <a href="{{route('home')}}"><img src="{{asset('assets/images/logo/logo dea.png')}}" alt="logo" style="width:40%"></a>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                         </span>
                     </div>
                     <div class="logo__hidden text-start">
-                        <a href="{{route('home')}}"><img src="{{asset('assets/images/logo/logo.png')}}" alt="" style="height:40px"></a>
+                        <a href="{{route('home')}}"><img src="{{asset('assets/images/logo/logo dea.png')}}" alt="" style="height:100px"></a>
                     </div>
                 </div>
 

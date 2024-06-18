@@ -1,7 +1,7 @@
 function getDataByWindowUrlKey(){
     let windowUrl = $(location).attr('href'); 
     let windowUrlKey = windowUrl.replace(/\/\s*$/, "").split('/').pop();
-    let url = baseUrl+'/api/book/'+windowUrlKey;
+    let url = baseUrl+'/api/bag/'+windowUrlKey;
     
     axios.get(url,{},apiHeaders)
     .then(function (response) {
@@ -10,10 +10,10 @@ function getDataByWindowUrlKey(){
 
       $('.product-img-main-href').attr('href',response.data.cover);
       $('.product-img-main-src').attr('src',response.data.cover);
-      $('#product-name').html(response.data.title);
+      $('#product-name').html(response.data.name);
       $('#product-price').html('IDR '+parseFloat(response.data.price).toLocaleString());
       $('#product-description').html(response.data.description);
-      $('#product-author').html(response.data.author);
+      $('#product-author').html(response.data.designer);
       $('#product-publisher').html('First published '+response.data.publication_year+' by '+response.data.publisher);
 
       // START -- note, unless you have these data in a database structure, here we are hardcoding them for display purposes
@@ -34,7 +34,7 @@ function getDataByWindowUrlKey(){
           $('.product-add-to-cart-is-disabled').show();
         }
         // tag
-        let collectionOfTag = ['Book', 'E-Book', 'Best Seller', 'Fiction', 'Education','Literature', 'Classics', 'Real Event', 'Young Adult', 'Religion','Health', 'Comic', 'Horror', 'Poem', 'Filmed', 'Encyclopedia', 'In English', 'In Indonesian'];
+        let collectionOfTag = ['Bag', 'New Arrivals', 'Best Sellers', 'Trendy', 'High Quality','Fashion', 'Shoulder Bags', 'Designer Bags'];
         let selectedTags    = collectionOfTag.sort(() => .5 - Math.random()).slice(0, 4); // only get 4, randomly, from collectionOfTag
         template = '';
         for (let index = 0; index < selectedTags.length; index++) {

@@ -12,21 +12,12 @@
                         <div class="product-filter">
                             <h6 class="mb-20">Type</h6>
                             <select class="_filter form-select form-select-sm" name="_publisher" onchange="getData()">
-                                <option value="" selected>All</option>
-                                <option value="putnam">Putnam</option>
-                                <option value="harriman house">Harriman House</option>
-                                <option value="balai pustaka">Balai Pustaka</option>
-                                <option value="Lentera dipantara">Lentera Dipantara</option>
-                                <option value="pan books">Pan Books</option>
-                                <option value="firefly books">Firefly Books</option>
-                                <option value="gramedia">Gramedia</option>
-                                <option value="scholastic">Scholastic</option>
-                                <option value="harper">Harper</option>
-                                <option value="dk children">DK Children</option>
-                                <option value="bentang pustaka">Bentang Pustaka</option>
-                                <option value="gagas media">Gagas Media</option>
-                                <option value="grasindo">Grasindo</option>
-                                <option value="Marjin Kiri">Marjin Kiri</option>
+                                <option value="" selected>Published</option>
+                                <option value="putnam">Prada</option>
+                                <option value="harriman house">Versace</option>
+                                <option value="balai pustaka">Chanel</option>
+                                <option value="Lentera dipantara">Dior</option>
+                                <option value="pan bags">Alessandro Michele</option>
                             </select>
                         </div>
                     </div>
@@ -62,24 +53,14 @@
                         <div class="product-filter">
                             <h6 class="mb-20">Tags</h6>
                             <div class="blog-tagcloud">
-                                <a href="#" class="selected">Book</a>
-                                <a href="#">E-Book</a>
-                                <a href="#">Best Seller</a>
-                                <a href="#">Fiction</a>
-                                <a href="#">Education</a>
-                                <a href="#">Literature</a>
-                                <a href="#">Classics</a>
-                                <a href="#">Real Event</a>
-                                <a href="#">Young Adult</a>
-                                <a href="#">Religion</a>
-                                <a href="#">Health</a>
-                                <a href="#">Comic</a>
-                                <a href="#">Horror</a>
-                                <a href="#">Poem</a>
-                                <a href="#">Filmed</a>
-                                <a href="#">Encyclopedia</a>
-                                <a href="#">In English</a>
-                                <a href="#">In Indonesian</a>
+                                <a href="#" class="selected">Bag</a>
+                                <a href="#">New Arrivals</a>
+                                <a href="#">Best Sellers</a>
+                                <a href="#">Trendy</a>
+                                <a href="#">High Quality</a>
+                                <a href="#">Fashion</a>
+                                <a href="#">Shoulder Bags</a>
+                                <a href="#">Designer Bags</a>
                             </div>
                         </div>
                     </div>

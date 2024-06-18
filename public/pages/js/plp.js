@@ -6,7 +6,7 @@ function getDataOnEnter(event){
     }
 }
 function getData(toPage=1){
-    let url = baseUrl+'/api/book';
+    let url = baseUrl+'/api/bag';
     if(toPage){
         $('[name="_page"]').val(toPage);
     }
@@ -24,22 +24,22 @@ function getData(toPage=1){
         let template = ``;
         // START-- products
             (response.data.products).forEach((item) => {
-                template += `   <div class="col-lg-3 col-md-4 col-sm-6">
+                template += `   <div class="tag4 col-sm-6">
                                     <div class="single-product-item text-center">
                                         <div class="products-images">
-                                            <a href="/book/`+item.id+`" class="product-thumbnail">
+                                            <a href="/bag/`+item.id+`" class="product-thumbnail">
                                                 <img src="`+item.cover+`" alt="Product Images" height="300">
                                             </a>
                                             <div class="product-actions">
-                                                <a href="/book/`+item.id+`"><i class="p-icon icon-plus"></i><span class="tool-tip">Quick View</span></a>
+                                                <a href="/bag/`+item.id+`"><i class="p-icon icon-plus"></i><span class="tool-tip">Quick View</span></a>
                                                 <a href="#"><i class="p-icon icon-bag2"></i> <span class="tool-tip">Add to cart</span></a>
                                             </div>
                                         </div>
                                         <div class="product-content">
                                             <h6 class="product-title">
-                                                <a href="/book/`+item.id+`">`+item.title+`</a>
+                                                <a href="/bag/`+item.id+`">`+item.name+`</a>
                                             </h6>
-                                            <small class="text-color-primary">`+item.author+`</small>
+                                            <small class="text-color-primary">`+item.designer+`</small>
                                             <div class="product-price">
                                                 <span class="new-price">IDR `+parseFloat(item.price).toLocaleString()+`</span>
                                             </div>

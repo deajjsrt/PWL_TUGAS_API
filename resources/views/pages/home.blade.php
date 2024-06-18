@@ -23,12 +23,12 @@
                             <h2>W.T.T.W.&nbsp;&nbsp;Store</h2>
                             <p>
                                 <small>
-                                Whether you're searching for a the latest bestsellers, timeless classics,
+                                Whether you're looking for the latest best-selling bags, timeless classics,
                                 or hidden gems, our carefully curated collection has something for everyone.
-                                Our passionate staff is dedicated to helping you find the perfect read, 
-                                and our cozy, welcoming environment invites you to linger
-                                and explore. Join our community of book lovers and let us help you.
-                                Visit us today and experience the joy of getting lost in a great book &#10084;
+                                Our passionate staff is dedicated to helping you find the perfect bag, 
+                                and our comfortable and friendly environment invites you to linger
+                                and explore. Join our community of bag lovers and let us help you.
+                                Visit us today and experience the joy of getting lost in a great bag &#10084;
                                 </small>
                             </p>
                             <p class="mt-5">Find your window to the world! Or, even, 

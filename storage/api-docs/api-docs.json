@@ -143,10 +143,10 @@
                 ]
             }
         },
-        "/api/book": {
+        "/api/bag": {
             "get": {
                 "tags": [
-                    "book"
+                    "bag"
                 ],
                 "summary": "Display a listing of the items",
                 "operationId": "index",
@@ -198,7 +198,7 @@
                         "required": false,
                         "schema": {
                             "type": "integer",
-                            "example": "latest"
+                            "example": "6"
                         }
                     }
                 ],
@@ -215,7 +215,7 @@
             },
             "post": {
                 "tags": [
-                    "book"
+                    "bag"
                 ],
                 "summary": "Store a newly created item",
                 "operationId": "store",
@@ -225,16 +225,16 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Book"
+                                "$ref": "#/components/schemas/Bag"
                             },
                             "example": {
-                                "title": "Eating Clean",
-                                "author": "Inge Tumiwa-Bachrens",
-                                "publisher": "Kawan Pustaka",
-                                "publication_year": "2016",
-                                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482170055i/33511107.jpg",
-                                "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu 'sehat' bagi tubuh kita.",
-                                "price": 85000
+                                "name": "LA MEDUSA CANVAS LARGE TOTE BAG",
+                                "designer": "Gianni Versace",
+                                "publisher": "Versace",
+                                "publication_year": "2024",
+                                "cover": "https://cdn-images.italist.com/image/upload/t_medium_dpr_2_q_auto_v_2,f_auto/ebcc1c021e598dcb630515710d2d2134.jpg",
+                                "description": "Terinspirasi oleh mitologi Yunani, LA MEDUSA CANVAS LARGE TOTE BAG telah menjadi penanda utama rumah Versace. Dinamakan berdasarkan motif ikoniknya, tas jinjing berbahan kanvas La Medusa semakin dipertegas dengan logo timbul dan pegangan bagian atas berbahan kulit.",
+                                "price": 26490000
                             }
                         }
                     }
@@ -265,10 +265,10 @@
                 ]
             }
         },
-        "/api/books/{id}": {
+        "/api/bag/{id}": {
             "get": {
                 "tags": [
-                    "book"
+                    "bag"
                 ],
                 "summary": "Display the specified item",
                 "operationId": "show",
@@ -313,7 +313,7 @@
             },
             "put": {
                 "tags": [
-                    "book"
+                    "bag"
                 ],
                 "summary": "Update the specified item",
                 "operationId": "update",
@@ -335,16 +335,16 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Book"
+                                "$ref": "#/components/schemas/Bag"
                             },
                             "example": {
-                                "title": "Eating Clean",
-                                "author": "Inge Tumiwa-Bachrens",
-                                "publisher": "Kawan Pustaka",
-                                "publication_year": "2016",
-                                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482170055i/33511107.jpg",
-                                "description": "Menjadi sehat adalah impian semua orang. Makanan yang selama ini kita pikir sehat ternyata belum tentu 'sehat' bagi tubuh kita.",
-                                "price": 85000
+                                "name": "LA MEDUSA CANVAS LARGE TOTE BAG",
+                                "designer": "Gianni Versace",
+                                "publisher": "Versace",
+                                "publication_year": "2024",
+                                "cover": "https://cdn-images.italist.com/image/upload/t_medium_dpr_2_q_auto_v_2,f_auto/ebcc1c021e598dcb630515710d2d2134.jpg",
+                                "description": "Terinspirasi oleh mitologi Yunani, LA MEDUSA CANVAS LARGE TOTE BAG telah menjadi penanda utama rumah Versace. Dinamakan berdasarkan motif ikoniknya, tas jinjing berbahan kanvas La Medusa semakin dipertegas dengan logo timbul dan pegangan bagian atas berbahan kulit.",
+                                "price": 26490000
                             }
                         }
                     }
@@ -384,7 +384,7 @@
             },
             "delete": {
                 "tags": [
-                    "book"
+                    "bag"
                 ],
                 "summary": "Remove the specified item",
                 "operationId": "destroy",
@@ -437,15 +437,15 @@
     },
     "components": {
         "schemas": {
-            "Book": {
-                "title": "Book model",
-                "description": "Book model",
+            "Bag": {
+                "title": "Bag model",
+                "description": "Bag model",
                 "required": [
                     "title",
                     "author"
                 ],
                 "xml": {
-                    "name": "Book"
+                    "name": "Bag"
                 }
             },
             "User": {

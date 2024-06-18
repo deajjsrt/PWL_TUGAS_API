@@ -9,27 +9,28 @@ use App\Models\User;
 use OpenApi\Annotations as OA;
 
 /**
- * Class Book.
+ * Class Bag.
  * 
- * @author Yonathan <yonathan.422023017@civitas.ukrida.ac.id>
+ * @author Yonathan <yonathan.4220230017@civitas.ukrida.ac.id>
  * 
  * @OA\Schema(
- *      description="Book model",
- *      title="Book model",
+ *      description="Bag model",
+ *      title="Bag model",
  *      required={"title", "author"},
  *      @OA\Xml(
- *          name="Book"
+ *          name="Bag"
  *      )
  * )
  */
-class Book extends Model
+
+class Bag extends Model
 {
-    // use HasFactory
+    // use HasFactory;
     use SoftDeletes;
-    protected $table = 'books';
+    protected $table = 'bags';
     protected $fillable = [
-        'title',
-        'author',
+        'name',
+        'designer',
         'publisher',
         'publication_year',
         'cover',
