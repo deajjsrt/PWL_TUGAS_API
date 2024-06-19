@@ -10,14 +10,15 @@
                 <div class="col-lg-3 col-md-3 order-md-1 order-2  small-mt__40">
                     <div class="shop-widget widget-shop-publishers mt-3">
                         <div class="product-filter">
-                            <h6 class="mb-20">Type</h6>
-                            <select class="_filter form-select form-select-sm" name="_publisher" onchange="getData()">
-                                <option value="" selected>Published</option>
-                                <option value="putnam">Prada</option>
-                                <option value="harriman house">Versace</option>
-                                <option value="balai pustaka">Chanel</option>
-                                <option value="Lentera dipantara">Dior</option>
-                                <option value="pan bags">Alessandro Michele</option>
+                            <h6 class="mb-20">Designer</h6>
+                            <select class="_filter form-select form-select-sm" name="_designer" onchange="getData()">
+                                <option value="" selected>All</option>
+                                <option value="Alessandro Michele">Alessandro Michele</option>
+                                <option value="Karl Lagerfeld">Karl Lagerfeld</option>
+                                <option value="Lagerfeld, Virginie Viard">Lagerfeld, Virginie Viard</option>
+                                <option value="Maria Grazia Chiuri">Maria Grazia Chiuri</option>
+                                <option value="Cognac">Cognac</option>
+                                <option value="Gianni Versace">Gianni Versace</option>
                             </select>
                         </div>
                     </div>

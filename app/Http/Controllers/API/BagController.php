@@ -91,8 +91,8 @@ class BagController extends Controller
             if($request->get('_search')){
                 $data['products'] = $data['products']->whereRaw('(LOWER(name) LIKE "%'.strtolower($request->get('_search')).'%")');
             }
-            if($request->get('_type')){
-                $data['products'] = $data['products']->whereRaw('LOWER(type) = "'.strtolower($request->get('_type')).'"');
+            if($request->get('_designer')){
+                $data['products'] = $data['products']->whereRaw('LOWER(designer) = "'.strtolower($request->get('_designer')).'"');
             }
             if($request->get('_sort_by')){
             switch ($request->get('_sort_by')) {
